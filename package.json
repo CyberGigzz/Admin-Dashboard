@@ -1,0 +1,14 @@
+{
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i src/input.css -o build/css/style.css --watch"
+  },
+  "author": "Giga",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
