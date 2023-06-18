@@ -12,90 +12,96 @@
     />
   </head>
   <body class="font-mono">
-    <aside
-      class="flex flex-col p-4 min-h-screen text-white max-w-[17rem] bg-sky-500 gap-10"
-    >
-      <div>
-        <ul>
-          <li class="flex items-center">
-            <svg class="svg-sprite h-8 w-8 fill-white">
-              <use xlink:href="build/img/sprite.svg#view-dashboard"></use>
-            </svg>
-            <p class="text-2xl font-semibold ml-4">Dashboard</p>
-          </li>
-        </ul>
-      </div>
+    <div class="grid grid-cols-1">
+      <aside
+        class="flex flex-col p-4 min-h-screen text-white bg-sky-500 gap-10"
+      >
+        <div>
+          <ul>
+            <li class="flex items-center hover:bg-black">
+              <svg class="svg-sprite h-8 w-8 fill-white">
+                <use xlink:href="build/img/sprite.svg#view-dashboard"></use>
+              </svg>
+              <span class="text-2xl font-semibold ml-4">Dashboard</span>
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <ul class="flex flex-col gap-1">
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#home-account"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Home</p>
-          </li>
+        <div>
+          <ul class="flex flex-col gap-1">
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#home-account"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Home</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#account-card"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Profile</p>
-          </li>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#account-card"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Profile</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#message"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Messages</p>
-          </li>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#message"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Messages</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#history"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">History</p>
-          </li>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#history"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">History</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#note-multiple"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Tasks</p>
-          </li>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#note-multiple"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Tasks</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#account-group"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Communities</p>
-          </li>
-        </ul>
-      </div>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#account-group"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Communities</p>
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <ul class="flex flex-col gap-1">
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#cog"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Settings</p>
-          </li>
+        <div>
+          <ul class="flex flex-col gap-1">
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#cog"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Settings</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#comment-question"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Support</p>
-          </li>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#comment-question"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Support</p>
+            </li>
 
-          <li class="flex items-center">
-            <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
-              <use xlink:href="build/img/sprite.svg#shield-lock"></use>
-            </svg>
-            <p class="text-xl ml-5 font-semibold pt-1">Privacy</p>
-          </li>
-        </ul>
-      </div>
-    </aside>
+            <li class="flex items-center">
+              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+                <use xlink:href="build/img/sprite.svg#shield-lock"></use>
+              </svg>
+              <p class="text-xl ml-5 font-semibold pt-1">Privacy</p>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <header class="p-6">
+        <div>haha</div>
+      </header>
+    </div>
   </body>
 </html>
