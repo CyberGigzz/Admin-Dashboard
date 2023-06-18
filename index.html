@@ -99,8 +99,8 @@
         </div>
       </aside>
 
-      <header class="px-8 py-4 shadow-md text-black">
-        <div class="flex justify-between mb-4">
+      <header class="px-8 py-4 shadow-header z-20 text-black">
+        <div class="flex justify-between mb-5">
           <div class="flex justify-center items-center">
             <svg class="svg-sprite h-6 w-6 mr-2">
               <use xlink:href="build/img/sprite.svg#magnify"></use>
@@ -110,7 +110,7 @@
                 type="search"
                 name="search"
                 id="search"
-                class="rounded-full bg-[rgba(226,232,240,255)] p-1 pl-4 w-[25rem]"
+                class="rounded-full bg-custom-blue p-1 pl-4 w-[25rem]"
               />
             </form>
           </div>
@@ -143,23 +143,161 @@
 
           <div class="flex gap-4">
             <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 w-24 rounded-full self-end"
             >
               New
             </button>
             <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 w-24 rounded-full self-end"
             >
               Upload
             </button>
             <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 w-24 rounded-full self-end"
             >
               Share
             </button>
           </div>
         </div>
       </header>
+
+      <main class="bg-custom-blue py-6 px-3">
+        <div class="flex justify-between mb-2">
+          <span class="text-[1rem] font-bold">Your Projects</span>
+          <span class="text-[1rem] font-bold">Announcements</span>
+        </div>
+
+        <div class="grid grid-cols-2 max-w-70 gap-4 grid-rows-3">
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Super Cool Project</div>
+
+            <p class="text-sm mb-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, vero.
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Less Cool Project</div>
+
+            <p class="text-sm mb-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, illum.
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Impossible App</div>
+
+            <p class="text-sm mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              nulla.
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Easy Peasy App</div>
+
+            <p class="text-sm mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At,
+              iure?
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Ad Blocker</div>
+
+            <p class="text-sm mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+              possimus!
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="bg-white relative py-6 px-3 pl-5 rounded shadow-md z-20 before:content-[''] before:w-2 before:h-full before:bg-amber-400 before:absolute before:top-0 before:left-0 overflow-hidden"
+          >
+            <div class="font-bold text-sm leading-3">Money Maker</div>
+
+            <p class="text-sm mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+              nemo?
+            </p>
+            <div class="flex flex-row-reverse gap-4">
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#source-fork"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#eye-plus"></use>
+              </svg>
+              <svg class="svg-sprite h-6 w-6">
+                <use xlink:href="build/img/sprite.svg#star-plus-outline"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div></div>
+
+      </main>
     </div>
   </body>
 </html>
