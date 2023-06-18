@@ -12,13 +12,13 @@
     />
   </head>
   <body class="font-mono">
-    <div class="grid grid-cols-1">
+    <div class="grid grid-cols-1-4 grid-rows-1-4">
       <aside
-        class="flex flex-col p-4 min-h-screen text-white bg-sky-500 gap-10"
+        class="flex flex-col p-4 h-screen text-white bg-sky-500 gap-10 row-span-2"
       >
         <div>
           <ul>
-            <li class="flex items-center hover:bg-black">
+            <li class="flex items-center">
               <svg class="svg-sprite h-8 w-8 fill-white">
                 <use xlink:href="build/img/sprite.svg#view-dashboard"></use>
               </svg>
@@ -76,7 +76,7 @@
         <div>
           <ul class="flex flex-col gap-1">
             <li class="flex items-center">
-              <svg class="svg-sprite h-5 w-5 ml-2 fill-white">
+              <svg class="svg-sprite w-5 h-5 hover:bg-blackw-5 ml-2 fill-white">
                 <use xlink:href="build/img/sprite.svg#cog"></use>
               </svg>
               <p class="text-xl ml-5 font-semibold pt-1">Settings</p>
@@ -99,8 +99,66 @@
         </div>
       </aside>
 
-      <header class="p-6">
-        <div>haha</div>
+      <header class="px-8 py-4 shadow-md text-black">
+        <div class="flex justify-between mb-4">
+          <div class="flex justify-center items-center">
+            <svg class="svg-sprite h-6 w-6 mr-2">
+              <use xlink:href="build/img/sprite.svg#magnify"></use>
+            </svg>
+            <form action="#">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="rounded-full bg-[rgba(226,232,240,255)] p-1 pl-4 w-[25rem]"
+              />
+            </form>
+          </div>
+
+          <div class="flex justify-center items-center gap-3">
+            <svg class="svg-sprite h-6 w-6 mr-2">
+              <use xlink:href="build/img/sprite.svg#bell-ring-outline"></use>
+            </svg>
+            <img
+              src="/build/img/batman.jpg"
+              alt="Batman"
+              class="w-10 h-10 rounded-full"
+            />
+            <span class="font-semibold">Batman</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between">
+          <div class="flex gap-3">
+            <img
+              src="/build/img/batman.jpg"
+              alt="Batman"
+              class="w-14 h-14 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <span class="text-sm font-bold">Hi there, </span>
+              <span class="text-xl font-bold">Batman (@Bruce Wayne)</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+            >
+              New
+            </button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+            >
+              Upload
+            </button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-24 rounded-full self-end"
+            >
+              Share
+            </button>
+          </div>
+        </div>
       </header>
     </div>
   </body>
